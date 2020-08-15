@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <%include inc/head.html%>
+    <%include inc/style.html%>
+    <body>
+
+    <!-- Fixed navbar -->
+    <%include inc/menu.html%>
+
+    <!-- Begin page content -->
+
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title"><b>Вопрос-Ответ</b></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" id="boardDiv">
+<!--
+          <div class="row messageF" id="m_1">
+            <div class="col-md-1 col-xs-2" style="padding:0px;"><img src="/i/ava.jpg" class="img-circle" style="widht:50px;height:50px"></div>
+            <div class="col-md-11 col-xs-10"><a href="#" class="nameF">Иванов Сергей</a><br>
+              <span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e95420"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e95420"></span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e95420"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </span><p class="metaF">3 часа назад</p><hr style="border-top: 1px dotted#ccc;"></div>
+            <div class="col-md-12 text-justify textCollapse" mid="m_1">Всем привет! 
+              Хочу написать про подтверждение диплома. Думаю будет многим полезно. 
+              В Германии профессии подразделяются на регламентированные и нерегламентированные. Напишу про первых на своём примере (архитектор). К регламентированным относятся также врачи, инженеры, юристы. Хотя у врачей своя история))
+              Первое, как и для всех, отправляются документы в Бонн в ZAB (переведённые присяжным переводчиком и заверенные в Rathaus копия диплома и приложение к диплому, а также копия паспорта и копия школьного аттестата без перевода на немецкий) 
+              Далее. У каждой профессии есть своя палата (инженеров, архитекторов, юристов и т д.) и после того как вы получили оценку вашего диплома из Бонна, то можно ставить антраг в палату, в моем случае в палату архитекторов. Включение вас в список палаты архитекторов, инженеров и т. д. и будет окончательным признанием вас как специалиста. 
+              Для этого потребуются следующие документы:
+              - Свидетельство о рождении;
+              - Namensänderung (если есть);
+              - Ausweis;
+              - Диплом;
+              - Трудовая книжка;
+              - Spätaussiedler Bescheinigung (или как здесь часто пишут зелёная книжка). 
+              Все документы должны быть переведены присяжным переводчиком в Германии. При включении в список палаты вы должны платить годовой взнос. В палате архитекторов это 220€ если вы наёмный работник или если работаете на себя то 330€. 
+              Но искать работу/практику можно и без подтверждения, если у вас есть опыт работы в вашей сфере и знания немецкого/английского можно рассылать бевербунги сразу. Я начала поиски сразу как сдала экзамен В2, прошла практику и осталась в этом бюро работать. Документы из Бонна получила только вот в январе, уже проработав несколько месяцев. Поиски работы это наверно отдельная тема, если интересно напишу отдельный пост.
+              Всем удачи с подтверждением диплома!
+            </div>
+            <div class="col-md-12">
+              <hr style="border-top: 1px dotted#ccc;margin:3px">
+              <span style="color:#e95420;cursor:pointer;" mid="m_1" class="commentF" class="commentF" data-toggle="modal"
+              data-target="#messageModal"><span class="label label-primary">12</span> ответов</span>
+            </div>
+          </div>
+
+          <div class="row messageF" id="m_2">
+            <div class="col-md-1 col-xs-2" style="padding:0px;"><img src="/i/ava2.jpg" class="img-circle" style="widht:50px;height:50px"></div>
+            <div class="col-md-11 col-xs-10"><a href="#" class="nameF">Ирина Майснер</a> <p class="metaF">4 часа назад</p><hr style="border-top: 1px dotted#ccc;"></div>
+            <div class="col-md-12 text-justify textCollapse" mid="m_2">Здравствуйте одногруппники:). Снова я к вам с папой вопросов:
+
+                1. У моей бабушки, от которой я буду вести происхождение, в СОР не стоит ни где указания на национальность. Там вообще такая старенькая простенькая бумажка, в которой указаны ее родители и сама бабушка, у всех ФИО немецкие, также указано, что место рождения с.Эйгенфельд в Ростовской области, ну и дата рождения конечно. А национальности ни где нет в этом документе. В принципе, глядя на это свидетельство, по ФИО и населенному пункту итак понятно, что речь явно о немцах. Но, понятно ли и очевидно ли это будет при рассмотрении документов? 
+                
+                2. Опять проблема с бабушкой. При рождении у нее указано имя Магдалена. В войну, когда всю семью репрессировали в Сибирь, всех детей, в том числе и мою бабушку почему-то переименовали в разные русские имена, бабушка получила советский паспорт с именем Матильда. В СОР ее сына (моего отца) указана мать с именем Матильда и национальностью немка. Далее, через какое-то время, видимо уже когда бабушка получала новый российский паспорт, она снова указала себя Магдаленой, на основании своего СОР видимо. В свидетельстве о смерти она тоже снова Магдалена. Теперь у меня диллема: очевидно ли будет BVA то, что Матильда и Магдалена - это одно и тоже лицо? Если нет, то я даже не знаю, какой документ и где мне запрашивать о том, что это один и тот же человек. Подскажите пожалуйста, может у кого-то тоже была такая проблема?
+            </div>
+            <div class="col-md-12">
+              <hr style="border-top: 1px dotted#ccc;margin:3px">
+              <span style="color:#e95420;cursor:pointer;" mid="m_2" class="commentF" class="commentF" data-toggle="modal"
+              data-target="#messageModal"><span class="label label-primary">27</span> ответов</span>
+            </div>
+          </div>
+  
+          <div class="row messageF" id="m_3">
+            <div class="col-md-1 col-xs-2" style="padding:0px;"><img src="/i/ava1.jpg" class="img-circle" style="widht:50px;height:50px"></div>
+            <div class="col-md-11 col-xs-10"><a href="#" class="nameF">Юлия Петерсон</a> <p class="metaF">10 часа назад</p><hr style="border-top: 1px dotted#ccc;"></div>
+            <div class="col-md-12 text-justify textCollapse" mid="m_3">Здравствуйте одногруппники:). Снова я к вам с папой вопросов:
+
+                1. У моей бабушки, от которой я буду вести происхождение, в СОР не стоит ни где указания на национальность. Там вообще такая старенькая простенькая бумажка, в которой указаны ее родители и сама бабушка, у всех ФИО немецкие, также указано, что место рождения с.Эйгенфельд в Ростовской области, ну и дата рождения конечно. А национальности ни где нет в этом документе. В принципе, глядя на это свидетельство, по ФИО и населенному пункту итак понятно, что речь явно о немцах. Но, понятно ли и очевидно ли это будет при рассмотрении документов? 
+                
+                2. Опять проблема с бабушкой. При рождении у нее указано имя Магдалена. В войну, когда всю семью репрессировали в Сибирь, всех детей, в том числе и мою бабушку почему-то переименовали в разные русские имена, бабушка получила советский паспорт с именем Матильда. В СОР ее сына (моего отца) указана мать с именем Матильда и национальностью немка. Далее, через какое-то время, видимо уже когда бабушка получала новый российский паспорт, она снова указала себя Магдаленой, на основании своего СОР видимо. В свидетельстве о смерти она тоже снова Магдалена. Теперь у меня диллема: очевидно ли будет BVA то, что Матильда и Магдалена - это одно и тоже лицо? Если нет, то я даже не знаю, какой документ и где мне запрашивать о том, что это один и тот же человек. Подскажите пожалуйста, может у кого-то тоже была такая проблема?
+            </div>
+            <div class="col-md-12">
+              <hr style="border-top: 1px dotted#ccc;margin:3px">
+              <span style="color:#e95420;cursor:pointer;" mid="m_3" class="commentF" class="commentF" data-toggle="modal"
+              data-target="#messageModal"><span class="label label-primary">7</span> ответов</span>
+            </div>
+          </div>
+
+          <div class="row messageF" id="m_4">
+            <div class="col-md-1 col-xs-2" style="padding:0px;"><img src="/i/ava.jpg" class="img-circle" style="widht:50px;height:50px"></div>
+            <div class="col-md-11 col-xs-10"><a href="#" class="nameF">Иванов Сергей</a> <p class="metaF">8 часа назад</p><hr style="border-top: 1px dotted#ccc;"></div>
+            <div class="col-md-12 text-justify textCollapse" mid="m_4">Всем привет!! Сегодня для нашей семьи радостный день!! Наконец то!)) 
+                Собственно наш путь оказался очень быстр... Первичка!!
+                май 2018 - начал изучать и думать о возможности переезда! Тогда же начал изучение языка (школьные знания оказались весьма полезны)
+                Июль 2018 - первая попытка сдачи В1, итог один сертификат Шпрехен!)) Супруга с первого раза сдаёт А1, училась с ноля около 2 месяцев! 
+                Параллельно учебе я через суд вношу национальность в СОБ, и собираю документы.
+                Август 2018 - сдаю В1 в другом городе!!
+                Сентябрь 2018 - суд с первого же заседания удовлетворяет иск! 
+                
+                Октябрь 2018 - через ДХЛ отправляю Антраг и полный пакет документов.
+                
+                Январь 2019 - терпение кончилось, пишу на общую почту и на почту Фрау Граммс!! Буквально через 2 дня, с двух эл. адресов мне отвечают, пишут что номер присвоен, ждите) а Фрау Граммс пишет письмо, которое я долго не забуду «Наберитесь терпения, в феврале вас ждёт хорошая Почта»!! И блин 26 февраля я достал из почтового ящика этот конверт)))) не верю!
+                
+                Мой совет: немцы любят точность. Я действовал ровно по Меркблату, ничего лишнего, ничего не досланного!! Без доверенного лица, все заполнял сам! Вся необходимая инфа есть в группе!! 
+                Спасибо за внимание!! Встретимся in Deutschland!! Vielen Dank!
+            </div>
+            <div class="col-md-12">
+              <hr style="border-top: 1px dotted#ccc;margin:3px">
+              <span style="color:#e95420;cursor:pointer;" mid="m_4" class="commentF" data-toggle="modal"
+              data-target="#messageModal"><span class="label label-primary">5</span> ответов</span>
+            </div>
+          </div>
+        -->
+
+          </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+      </div>
+      </div>
+    <%include inc/footer.html%>
+
+    <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="messageModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content" style="border-radius: 45px 5px 5px 5px">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-md-1 col-xs-2"><img src="" class="img-circle" style="width:60px;height:60px;opacity:0;" id="mImg"></div>
+                    <div class="col-md-10 col-xs-9">
+                      <a href="" class="nameF" id="mName" style="opacity:0;"></a><br>
+                      <span id="mStars" style="opacity:0;"></span><p class="metaF" id="mDate" style="opacity:0;"></p>
+                    </div>
+                    <div class="col-md-1 col-xs-1"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+                </div>
+            </div>
+            <div class="modal-body" id="messageModalBody">
+              
+              
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal" id="closeDialog">Закрыть</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/jquery.json.min.js"></script>
+    <script type="text/javascript">
+
+      var spinner ='<div class="spinner">';
+      spinner += '<div class="rect1"></div>';
+      spinner += '<div class="rect2"></div>';
+      spinner += '<div class="rect3"></div>';
+      spinner += '<div class="rect4"></div>';
+      spinner += '<div class="rect5"></div>';
+      spinner += '</div>';
+
+      var fLoader = '<div class="Floader" style="width:100%;text-align:center">' + spinner + '</div>';
+
+      $('#boardDiv').append(fLoader);
+      var start = 0;
+      var page = 10;
+     loadMessageas(start, page);
+     loaderOn();
+
+      function commenter() {
+        $('.commentF').unbind('click');
+        $('.commentF').click(function(){
+          var mid = $(this).attr('mid');
+          $('#messageModalBody').html(spinner);
+          $('#mImg').attr('src', '');
+          $('#mImg').css('opacity', '0');
+          $('#mName').attr('href', '');
+          $('#mName').html('');
+          $('#mName').css('opacity', '0');
+          $('#mDate').html('');
+          $('#mDate').css('opacity', '0');
+          $('#mStars').html('');
+          $('#mStars').css('opacity', '0');
+          get_comments(mid);
+        });
+      }
+
+      function get_comments(mid) {
+        $.post(
+          '/cgi-bin/index.cgi', {
+            pkg: 'content:forum',
+            action: 'get_comments',
+            mid: mid
+          },
+          function(data, textStatus){
+            try {
+              var response = $.evalJSON(data);
+            }
+            catch(e) {
+              alert('Error: ' + e);
+              return;
+            }
+            var msg = response['mainMsg'];
+            $('#mImg').attr('src', '/i/a/' + msg['muid'] +   '.jpg');
+            $('#mImg').show().animate({opacity:1},1000);
+            $('#mName').attr('href', '/user_' + msg['muid'] +   '.html');
+            $('#mName').html(msg['uvorname'] + ' ' + msg['uname']);
+            $('#mName').show().animate({opacity:1},1000);
+            $('#mDate').html(msg['mtime']);
+            $('#mDate').show().animate({opacity:1},1000);
+            var stars = '';
+            for (var s = 1; s <= 5; s++) {
+              if(s <= msg['rate']) {
+                stars += '<span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e95420"></span>';
+              } else {
+                stars += '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
+              }
+            }
+            $('#mStars').html(stars);
+            $('#mStars').show().animate({opacity:1},1000);
+            $('#messageModalBody').css('opacity', '0');
+            var html = msg['mbody'];
+            html = html.replace(/\n/g, '<br />');
+            $('#messageModalBody').html(html);
+            $('#messageModalBody').show().animate({opacity:1},1000);
+            // alert('/i/a/' + msg['muid'] +   '.jpg');
+          }
+        );
+      }
+
+      function loadMessageas(start, page) {
+        $.post(
+          '/cgi-bin/index.cgi', {
+            pkg: 'content:forum',
+            action: 'get_msg',
+            start: start,
+            page: page
+          },
+          function(data, textStatus){
+            var Messages;
+            try {
+              Messages = $.evalJSON(data);
+            }
+            catch(e) {
+              alert('Error: ' + e);
+              return;
+            } 
+            var Messages = $.evalJSON(data);
+            if(!Messages[0]) {
+              return;
+            }
+            for (var i in Messages) {
+              var bid = 'tc_' + Messages[i]['mid'];
+              var msg = '<div class="row messageF" id="' + Messages[i]['mid'] + '">';
+              msg += '<div class="col-md-1 col-xs-2" style="padding:0px;"><img src="/i/a/' + Messages[i]['muid'] + '.jpg" class="img-circle" style="widht:60px;height:60px"></div>';
+              msg += '<div class="col-md-11 col-xs-10"><a href="/user_' + Messages[i]['muid'] + '.html" class="nameF">' + Messages[i]['uvorname'] + ' ' + Messages[i]['uname'] + '</a>';
+              msg += '<br><span>';
+              for (var s = 1; s <= 5; s++) {
+                if(s <= Messages[i]['rate']) {
+                  msg += '<span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #e95420"></span>';
+                } else {
+                  msg += '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
+                }
+              }
+              msg += '<p class="metaF">' + Messages[i]['mtime'] + '</p><hr style="border-top: 1px dotted#ccc;"></div>';
+              msg += '<div class="col-md-12 text-justify textCollapse" id="' + bid + '" mid="' + Messages[i]['mid'] + '">'+ Messages[i]['mbody'] + '</div>';
+              msg += '<div class="col-md-12">';
+              msg += '<hr style="border-top: 1px dotted#ccc;margin-bottom:3px">';
+              msg += '<span style="color:#e95420;cursor:pointer;" mid="' + Messages[i]['mid'] + '" class="commentF" data-toggle="modal"';
+              msg += 'data-target="#messageModal"><span class="label label-primary">5</span> ответов</span><hr style="border-top: 1px dotted#ccc;margin-top:6px">';
+              msg += '</div>';
+             
+              // msg += '<div class="row" style="padding-left:15px;padding-right:15px;padding-top:0px;">';
+              // msg += '<div class="col-md-12" style="padding-top:0px;"></div>';
+              msg += '<div class="col-md-12"><div class="row" style="padding-left:15px;padding-right:15px;">';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+                msg += '<div class="col-md-1 col-xs-3" style="padding: 2px;"><img src="/i/9D8CFC2503C789BA0D4D452E19F32838/dscn8283.jpg" class="img-thumbnail img-responsive"></div>';
+              msg += '</div></div>';
+
+              msg += '</div>';
+              $('#boardDiv').append(msg);
+              var html = $('#' + bid).html();
+              html = html.replace(/\n/g, '<br />');
+              $('#' + bid).attr('full_text', html);
+              $('#' + bid).html(html.substring(0, 170) + ' ...&nbsp;<span style="cursor:pointer;color:#e95420"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span>');
+              $('#' + bid).css('display', 'block');
+              $('#' + bid).show().animate({opacity:1});
+              $('#' + bid).css('cursor', 'pointer');
+            }
+            $(".Floader").remove();
+            $('#boardDiv').append(fLoader);
+            textCollapser();
+            commenter();
+          }
+        );
+      }
+
+      function loaderOn() {
+        $(window).scroll(function(){
+          var div_position = $('.Floader').offset();
+          var div_bottom = div_position.top + $('.btinew').height();
+          var bottom_scroll = $(document).scrollTop() + $(window).height();
+          if(bottom_scroll > div_bottom) {
+            $(".Floader").remove();
+            start += 10;
+            loadMessageas(start, page);
+          }
+        });
+      }
+
+      function textCollapser() {
+        $('.textCollapse').unbind('click');
+        $('.textCollapse').click(function(){
+          var thisId = this;
+          var mid = $(thisId).attr('mid');
+          if($(thisId).attr('ignorMy')) {
+            $(thisId).removeAttr('ignorMy');
+            return;
+          }
+          // alert('123');
+          var html = $(thisId).attr('full_text');
+          if(html) {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $('#' + mid).offset().top - 60
+              }, 300);
+            // var randId = Math.floor(Math.random() * 100000) + 1;
+            $(thisId).css('opacity', '0');
+            $(thisId).html(html + '&nbsp;<span style="cursor:pointer;color:#e95420"><span id="c' + mid + '" class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></span>');
+            $(thisId).removeAttr('full_text');
+            $(thisId).css('cursor', 'default');
+            $(thisId).show().animate({opacity:1},1000);
+            $('#c' + mid).click(function(){
+              $(thisId).css('opacity', '0');
+              $(thisId).html(html.substring(0, 170) + ' ...&nbsp;<span style="cursor:pointer;color:#e95420"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span>');
+              $(thisId).attr('full_text', html);
+              $(thisId).attr('ignorMy', '1');
+              $(thisId).css('cursor', 'pointer');
+              $(thisId).animate({opacity:1},1000);
+              $([document.documentElement, document.body]).animate({
+                scrollTop: $('#' + mid).offset().top - 60
+              }, 300);
+              return;
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

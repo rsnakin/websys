@@ -1,0 +1,89 @@
+
+$(document).ready( function() {
+    var RECT_COLOR = '0, 0, 200';
+    var FILL_COLOR = '100, 100, 200';
+    var RECT_OPACITY = '1';
+    var FILL_OPACITY = '0.4';
+    var canvas = document.getElementById('iCanvas')
+    var drv = canvas.getContext('2d');
+
+    $(document).on('change', '.btn-file :file', function() {
+        var input = $(this),
+          label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [label]);
+      });
+
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+    
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            var img = new Image();
+            reader.onload = function (e) {
+                // $('#img-upload').attr('src', e.target.result);
+                
+                img.onload = function() {
+                    var scale = $('#canvasDiv').width()/img.width;
+                    canvas.width = img.width * scale;
+                    canvas.height = img.height * scale;
+                    drv.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    drv.beginPath();
+                    drv.lineWidth = 0.5;
+                    drv.strokeStyle = "rgba(" + RECT_COLOR + ", " + RECT_OPACITY +")";
+                    var sX; var sY; var sX1; var sY1;
+                    if(canvas.width > canvas.height) {
+                        sX = (canvas.width - canvas.height) / 2;
+                        sY = 0;
+                        sX1 = canvas.height;
+                        sY1 = canvas.height;
+                    } else {
+                        sX = 0;
+                        sY = (canvas.height - canvas.width) / 2;
+                        sX1 = canvas.width;
+                        sY1 = canvas.width;
+                    }
+                    drv.fillStyle = "rgba(" + RECT_COLOR + ", " + RECT_OPACITY +")";
+                    drv.strokeRect(sX, sY , sX1, sY1);
+                    drv.fillStyle = "rgba(" + FILL_COLOR + ", " + FILL_OPACITY +")";
+                    drv.fillRect(0, 0, sX, sY1);
+                    drv.fillRect(sX1 + sX, 0, sX, sY1);
+                    drv.fillRect(0, 0, sX1, sY);
+                    drv.fillRect(0, sY + sY1, sX1, sY);
+                    drv.stroke();
+                    canvas.toBlob(function(blob) {
+                        $('#img-upload').attr('src', canvas.toDataURL("image/png"));
+                        // alert(blob);
+                      }, "image/png");
+                };
+                img.src = e.target.result;
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function(){
+        readURL(this);
+    }); 	
+});
+
+function drawImageScaled(img, ctx) {
+    var canvas = ctx.canvas ;
+    var hRatio = canvas.width()  / img.width()    ;
+    var vRatio =  canvas.height() / img.height()  ;
+    var ratio  = Math.min ( hRatio, vRatio );
+    var centerShift_x = ( canvas.width - img.width*ratio ) / 2;
+    var centerShift_y = ( canvas.height - img.height*ratio ) / 2;  
+    ctx.clearRect(0,0,canvas.width, canvas.height);
+    ctx.drawImage(img, 0,0, img.width, img.height, centerShift_x,centerShift_y,img.width*ratio, img.height*ratio);  
+ }

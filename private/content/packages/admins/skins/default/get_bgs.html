@@ -1,0 +1,9 @@
+<div class="uk-block uk-padding-remove">
+<div class="uk-grid">
+<%loop $bgs as $i%>
+<div class="uk-width-2-10" style="padding-bottom:5px">
+  <img src="<%$base_url%>/<%$i.bg_name%>.jpg?v=<%$rand%>" class="bgsclick" oo="<%$i.bg_id%>">
+</div>
+<%/loop%>
+</div>
+</div>

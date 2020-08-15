@@ -1,0 +1,30 @@
+<%include inc/top.html%>
+<div class="uk-width-8-10" style="background:#fff;padding:10px;border:1px dotted #000">
+<form name="nshop" action="/cgi-bin/index.cgi" method="post">
+<input type="hidden" name="pkg" value="content:admins">
+<input type="hidden" name="action" value="shops">
+<table width="100%" style="padding:1px">
+  <tr>
+    <td colspan="4" style="padding:0px"><h3>Добавить магазин<h3></td>
+  </tr>
+  <tr>
+    <td width="30%" style="padding-left:10px;">Название</td>
+    <td width="30%" style="padding-left:10px">URL</td>
+    <td width="20%" style="padding-left:10px">ID</td>
+    <td width="10%" style="padding-left:10px"></td>
+  </tr>
+  <tr>
+    <td width="30%" style="padding:10px"><input type="text" value="<%$query.shop_name%>" name="shop_name" style="width:100%"></td>
+    <td width="30%" style="padding:10px"><input type="text" value="<%$query.shop_url%>" name="shop_url" style="width:100%"></td>
+    <td width="20%" style="padding:10px"><input type="text" value="<%$query.shop_id%>" name="shop_id" style="width:100%"></td>
+    <td width="10%" style="padding:10px"><input type="submit" value="сохранить" name="save"></td>
+  </tr>
+</table>
+</form>
+</div>
+<%include inc/bottom.html%>
+<%include inc/jss.html%>
+<%include inc/jsscommon.html%>
+<%include inc/end.html%>
+
+

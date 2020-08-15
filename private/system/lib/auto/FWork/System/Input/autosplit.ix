@@ -1,0 +1,14 @@
+# Index created by AutoSplit for /www/plazza/cgi-bin/private/system/lib/FWork/System/Input.pm
+#    (file acts as timestamp)
+package FWork::System::Input;
+sub check_temp_path  ;
+sub get_upload_info  ;
+sub get_upload_id  ;
+sub get_query_as_url  ;
+sub find_query  ;
+sub file  ;
+sub _parse_multipart  ;
+sub restore_input_from_disk  ;
+sub save_input_to_disk  ;
+sub clean_saved_input  ;
+1;

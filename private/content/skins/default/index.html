@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <%include inc/head.html%>
+  <%include inc/style.html%>
+  <body>
+
+    <!-- Fixed navbar -->
+<%include inc/menu.html%>
+    <div class="container" style="padding-top:60px;">
+        <%include inc/carousel.html%>
+    </div>
+    
+        <div class="container" style="padding-top:0px;">
+          <h1 class="blog-title"><b><%$main_announce.name%></b></h1>
+          <h4>&nbsp;</h4>
+          <p style="font-size: 16px;"><%$main_announce.body%></p>
+          <p align="right"><a href="<%$main_announce.link%>">Подробнее &raquo;</a></p>
+        </div>
+    <h2 class="nurTitle">Полезная информация</h2>
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <%loop $announces as $a%>
+          <div class="col-md-4 borda">
+            <h3><a href="<%$a.link%>"><%$a.name%></a></h3>
+            <p><a href="<%$a.link%>" class="alink"><%$a.body%></a></p>
+            <!-- <p align="right"><a href="<%$a.link%>">Подробнее &raquo;</a></p> -->
+          </div>
+          <%if $a.next_line%>
+          </div>
+          <div class="row">
+          <%/if%>
+          <%/loop%>
+        </div>
+    </div>
+    <div style="padding: 40px;"></div>
+    <%include inc/footer.html%>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/jquery.json.min.js"></script>
+    <script src="/js/cookies.js"></script>
+    <script src="/js/debug.js"></script>
+    <script src="/js/dtools.js"></script>   
+<!--     <script src="/js/menu.js"></script> -->
+    <script src="/js/forum/reg_modal.js"></script>
+    <script src="/js/forum/login.js"></script>
+    <script type="text/javascript">
+      /*
+      var pageMenu = new menu();
+      
+
+      var menuTray = function(tray) {
+        tray.object.unbind('click');
+        tray.update('12');
+        tray.object.click(function(){
+          //appendInfo('click!!');
+          tray.hide();
+          setTimeout(function(){tray.update(parseInt(Math.random() * 100));}, 2000);
+        });
+      };
+
+      pageMenu.userTrayAction(menuTray);
+      pageMenu.start();
+      */
+      // var cHeight;
+      $('.carouselImage').each(function(){
+        if($(this).innerHeight() > 0) {
+          var cHeight = $(this).innerHeight();
+          // alert(cHeight);
+          $('.carousel-link').css('font-size', (cHeight / 8) + 'px');
+        }
+      });
+    </script>
+  </body>
+</html>

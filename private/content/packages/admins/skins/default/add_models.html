@@ -1,0 +1,85 @@
+<%include inc/top.html%>
+<div class="uk-width-8-10" style="background:#fff;padding:10px;border:1px dotted #000">
+<form method="post">
+<input type="hidden" name="action" value="add_models">
+<input type="hidden" name="pkg" value="content:admins">
+<table width="100%">
+  <tr>
+    <td valign="top" align="center" style="border-top:1px dotted #CCC" width="33%">
+      Категории
+      <select name="categories" multiple="multiple" style="width:100%;height:100px">
+        <%loop $cats as $c%><option value="<%$c.category_id%>"<%if $query.categories=$c.category_id%> selected<%/if%>><%$c.category_name%></option><%/loop%>
+      </select>
+    </td>
+    <td valign="top" align="center" style="border-top:1px dotted #CCC" width="33%">
+      Производители
+      <select name="brands" multiple="multiple" style="width:100%;height:100px">
+        <%loop $brands as $b%><option value=<%$b.brand_id%><%if $query.brands=$b.brand_id%> selected<%/if%>><%$b.brand_name%></option><%/loop%>
+      </select>
+    </td>
+    <td valign="top" align="center" style="border-top:1px dotted #CCC" width="33%">
+      Марки
+      <select name="marks" multiple="multiple" style="width:100%;height:100px">
+        <%loop $marks as $m%><option value=<%$m.mark_id%><%if $query.marks=$m.mark_id%> selected<%/if%>><%$m.mark_name%></option><%/loop%>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    Название:
+    </td>
+    <td colspan="2">
+    <input type="text" name="model_name" style="width:100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    Год выпуска:
+    </td>
+    <td colspan="2">
+    <input type="text" name="model_year" style="width:100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">
+    Общие данные об автомобиле:
+    </td>
+    <td colspan="2">
+    <textarea name="model_common" style="width:100%;height:100px;resize:none;"><%$model.model_common%></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">
+    Характеристика автомобиля:
+    </td>
+    <td colspan="2">
+    <textarea name="model_char" style="width:100%;height:100px;resize:none;"><%$model.model_char%></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td align="right" valign="top">
+    Описание модели:
+    </td>
+    <td colspan="2">
+    <textarea name="model_desc" style="width:100%;height:100px;resize:none;"><%$model.model_desc%></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td align="right">
+    </td>
+    <td colspan="2">
+    <input type="submit" name="add" value="Добавить">
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+<%include inc/bottom.html%>
+<%include inc/jss.html%>
+<%include inc/jsscommon.html%>
+<script type="text/javascript">
+
+</script>
+<%include inc/end.html%>
+
+
